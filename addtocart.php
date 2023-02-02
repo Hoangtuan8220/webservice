@@ -14,6 +14,7 @@ if (isset($_POST['delcart'])) {
 if (isset($_POST['addproduct'])) {
     $name = $_POST['name'];
     $price = (int) $_POST['price'];
+    $food_id = (int) $_POST['food_id'];    
     $quantity = $_POST['quantity'];
     $image = $_POST['image'];
     $description = $_POST['description'];
@@ -26,7 +27,7 @@ if (isset($_POST['addproduct'])) {
             $quantitynew = $quantity + $_SESSION['cart'][$i][2];
             $_SESSION['sumquantity'] += $quantity;
             $total = $price * $quantitynew;
-            $sp = [$name, $price, $quantitynew, $total, $image, $description];
+            $sp = [$name, $price, $quantitynew, $total, $image, $description, $food_id];
             $_SESSION['cart'][$i] = $sp;           
             break;
         }
@@ -34,7 +35,7 @@ if (isset($_POST['addproduct'])) {
     if ($check==0) {
         $_SESSION['sumquantity'] += $quantity;
         $total = $price * $quantity;
-        $sp = [$name, $price, $quantity, $total, $image, $description];
+        $sp = [$name, $price, $quantity, $total, $image, $description, $food_id];
         $_SESSION['cart'][] = $sp;       
     }
     header("Location: index.php");

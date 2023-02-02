@@ -40,11 +40,12 @@ require 'layouts/header.php';
             <form action="addtocart.php?id=<?php echo ($row['id']); ?>" method="post">
                 <div class="row products">
                     <div class="col-md-6">
-                        <img src="assets/img/<?php echo ($row['img']) ?>" alt="" name="image">
+                        <img src="<?php echo ($row['img']) ?>" alt="" name="image" style="height: 170px; object-fit: cover;">
                         <input type="hidden" name="image" value="<?php echo ($row['img']) ?>"></input>
+                        <input type="hidden" name="food_id" value="<?php echo ($row['id']) ?>"></input>
                     </div>
                     <div class="col-md-6 ml-10px">
-                        <input type="hidden" class="name" name="name" value="<?php echo ($row['name']) ?>"><?php echo ($row['name']) ?></input>
+                        <input type="hidden" class="name" name="name" value="<?php echo ($row['name']) ?>"><b><?php echo ($row['name']) ?></b></input>
                         <p class="description"><?php echo ($row['description']) ?></p>
                         <input type="hidden" name="description" value="<?php echo ($row['description']) ?>"></input>
                         <input type="hidden" name="price" value="<?php echo ($row['price']) ?>">

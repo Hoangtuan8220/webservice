@@ -26,9 +26,6 @@ switch ($weather) {
         break;
 }
 $weather_temp = round($weather_tempdefault - 273.15);
-// echo ($weather_temp);
-// print_r($weather_data);
-
 ?>
 
 
@@ -69,6 +66,7 @@ $weather_temp = round($weather_tempdefault - 273.15);
                         $amount = $_SESSION['cart'][0][2];
                         $image = $_SESSION['cart'][0][4];
                         $description = $_SESSION['cart'][0][5];
+                        $food_id = $_SESSION['cart'][0][6];
                     ?>
                         
                     <tr>
@@ -129,8 +127,8 @@ $weather_temp = round($weather_tempdefault - 273.15);
     $weather_impact = $phivanchuyen - 15000;
     if (isset($_POST['thanhtoan'])) {
         unlink('data.json');
-        $sql = "INSERT INTO `bill`(`name`, `image`, `description`, `amount`, `weather_impact`, `price`, `transport`, `user_money`, `payment`) 
-        VALUES ('$name','$image','$description','$amount','$weather_impact','$price','$phivanchuyen','$money','$payment')";
+        $sql = "INSERT INTO `bill`(`name`, `image`, `description`, `amount`, `weather_impact`, `price`, `transport`, `user_money`, `payment`, `food_id`) 
+        VALUES ('$name','$image','$description','$amount','$weather_impact','$price','$phivanchuyen','$money','$payment','$food_id')";
         $result = mysqli_query($connect, $sql);
 
         $sql_update = "UPDATE `bill` SET `payment` = '$payment' WHERE `id` = '$id'";
