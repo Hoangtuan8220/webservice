@@ -1,6 +1,7 @@
 <?php
 session_start();
 require 'connect.php';
+
 $totalproducts = 0;
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];

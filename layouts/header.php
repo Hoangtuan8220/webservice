@@ -7,7 +7,7 @@ if (!isset($_SESSION['sumquantity'])) {
     <div class="headerMa row">
         <div class="col-md-1"></div>
         <div class="col-md-2 logo">
-            <a href="index.php"><img src="assets/img/logo.png" alt=""></a>
+            <a href="index.php"><img src="assets/img/logo-full-slogan.png" alt="" style="height: 69px; margin: 7px;"></a>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-3 timkiem">
