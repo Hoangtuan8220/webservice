@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.content img {
+    border-radius: 4px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-22 {
+    width: 22%;
+}
+
+.content-products {
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.178);
+    min-height: 692px;
+    padding-top: 104px;
+}
+
+.products {
+    height: 204px;
+    background-color: #fff;
+    padding: 16px 0 16px 16px;
+    margin-right: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.products:hover {
+    border: 1px solid #00B14F;
+}
+
+.add-product {
+    margin-top: 7px;
+    margin-right: 16px;
+}
+
+.add-product a {
+    text-decoration: none;
+}
+
+
+.add {
+    color: #fff;
+    background-color: #00B14F;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    line-height: 24px;
+    font-weight: 1000;
+    font-size: 35px;
+    padding-left: 1px;
+    padding-top: 2px;
+}
+
+
+.products img {    
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.name{
+    font-size: 1.14285714rem;
+}
+
+.description {
+    height: 88px;
+}
+
+.headerMa {
+    height: 88px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px 0 rgb(28 28 28 / 6%);
+    position: fixed;
+}
+
+.logo img{
+    width: auto;
+    height: 48%;
+    margin-top: 3%;
+}
+
+.timkiem {
+    position: relative;
+}
+
+.button_search {
+    top: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    right: 10px;
+}
+.search{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    margin-top: 22px;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    padding: 0 16px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.display_none {
+    display: none;
+}
+
+.giohang {
+    background-color: #00B14F;
+    height: 38px;
+    color: #fff;
+    margin-top: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.payment {
+    color: #00B14F;
+    height: 38px;
+    background-color: #fff;
+    margin-top: 22px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+
+.giohang a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.giohang p {
+    line-height: 38px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cart {
+    position: absolute;
+    color: #00B14F;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #00B14F;
+    text-align: center;
+    line-height: 17px;
+    top: -10px;
+    left: -14px;
+}
+
+.addsubmit {
+    cursor: pointer;
+    border: none;
+}
+
+.quantity {
+    width: 36px;
+    height: 24px;
+}
+
+table, tr, td,th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td,th {
+    padding: 5px 10px;
+}
+
+.thanhtoan {
+    background-color: #00B14F;
+    padding: 0 10px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 20px 0 0;
+}
+
+
+
+
+
+.pointer {
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.image {
+    border-radius: 4px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-1-4 {
+    width: 23%;
+}
+
+
+
+.ml-10px { 
+    padding-left: 10px;
+}
+
+.pageNo {
+    float: right;
+    margin: 85px 40px 0 0;
+}
+.pageNo a{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    color: #fff;
+    background-color: #b78a28;
+    border-color: sandybrown;
+}
+
+
+ .current-page{
+    border: 1px solid gray;
+} 
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.col-md-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%
+}
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%
+}
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+}
+.col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%
+}
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%
+}
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%
+}
+.col-md-9 {
+    flex: 0 0 auto;
+    width: 75%
+}
+.col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%
+}
+.col-md-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%
+}
+.col-md-12 {
+    flex: 0 0 auto;
+    width: 100%
+}
